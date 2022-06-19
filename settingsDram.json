@@ -1,0 +1,40 @@
+{
+	"downloadUrl" : "C:\\Users\\wolve\\Downloads",
+	"extensionsPath":[
+		{
+			"extension" : [
+				"mp3",
+				"wav"
+			],
+			"url": "C:\\Users\\wolve\\Music\\"
+		},
+		{
+			"extension" : [
+				"jpg",
+				"png",
+				"jpeg",
+				"svg"
+			],
+			"url": "C:\\Users\\wolve\\Pictures\\"
+		},{
+			"extension" : [
+				"torrent"
+			],
+			"url" : "C:\\Users\\wolve\\Downloads\\Cursos\\Torrents\\"
+		}
+	],
+	"prefix" : [
+		{
+			"prefix" : "-v",
+			"url": "C:\\Users\\wolve\\Escritorio\\Vidios\\"
+		},
+		{
+			"prefix": "-a",
+			"url": "C:\\Users\\wolve\\Escritorio\\Audio\\"
+		}
+	],
+	"blackList" : [
+		"y2mate.com - ",
+		" OFFICIAL VIDEO"
+	]
+}
