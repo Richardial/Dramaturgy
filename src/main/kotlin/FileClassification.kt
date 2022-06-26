@@ -60,18 +60,10 @@ class FileClassification {
             return newName
         }
 
-        private fun getFolderInName(name: String, value : Int): String?{
+        private fun getFolderInName(name: String, value: Int): String? {
             val pattern = "\\(([^()]*)\\)".toRegex()
-            val extraFolder = pattern.find(name)?.groupValues?.get(value)
-            return extraFolder
+            return pattern.find(name)?.groupValues?.get(value)
         }
 
     }
-
-
-
-
-
-
-
 }

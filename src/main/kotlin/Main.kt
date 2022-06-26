@@ -1,10 +1,5 @@
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.cancelChildren
-import kotlinx.coroutines.channels.ReceiveChannel
-import kotlinx.coroutines.channels.produce
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 import java.io.File
 import java.nio.file.FileSystems
 import java.nio.file.StandardWatchEventKinds
@@ -15,9 +10,9 @@ fun main() {
 }
 
 fun watchDownloads(){
-    var json = File("settingsDram.json").readText(Charsets.UTF_8)
-    val mapper = jacksonObjectMapper()
-    var settings : Setting = mapper.readValue(json,Setting::class.java)
+
+    val json = File("settingsDram.json").readText(Charsets.UTF_8)
+    val settings = Json.decodeFromString<Setting>(json)
 
     val url = settings.downloadUrl
     val downloadFolder  = File(url)

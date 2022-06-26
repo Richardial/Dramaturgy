@@ -6,7 +6,7 @@ plugins {
     kotlin("plugin.serialization") version "1.6.21"
 }
 
-group = "me.wolve"
+group = "Allux"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -17,7 +17,6 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.+")
 }
 
 tasks.test {
