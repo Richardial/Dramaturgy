@@ -4,7 +4,8 @@
 		{
 			"extension" : [
 				"mp3",
-				"wav"
+				"wav",
+				"mp4"
 			],
 			"url": "C:\\Users\\wolve\\Music\\"
 		},
@@ -15,7 +16,7 @@
 				"jpeg",
 				"svg"
 			],
-			"url": "C:\\Users\\wolve\\Pictures\\"
+			"url": "C:\\Users\\wolve\\Downloads\\Memes\\"
 		},{
 			"extension" : [
 				"torrent"
@@ -26,11 +27,11 @@
 	"prefix" : [
 		{
 			"prefix" : "-v",
-			"url": "C:\\Users\\wolve\\Escritorio\\Vidios\\"
+			"url": "C:\\Users\\wolve\\Desktop\\Vidios\\"
 		},
 		{
 			"prefix": "-a",
-			"url": "C:\\Users\\wolve\\Escritorio\\Audio\\"
+			"url": "C:\\Users\\wolve\\Desktop\\Audio\\"
 		}
 	],
 	"blackList" : [
