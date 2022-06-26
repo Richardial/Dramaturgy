@@ -17,8 +17,6 @@ class FileClassification {
                 for(pref in prefix){
                     if(tempPrefix == pref.prefix){
                         file.renameTo(File(pref.url+ cleanName(file.name,black)))
-                    }else{
-                        redirectByExtension(file, extensions, black)
                     }
                 }
             }else{
