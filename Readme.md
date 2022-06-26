@@ -2,8 +2,10 @@
 
 **Table of Contents**
 
-
-[TOC]
+- [Dramaturgy](#dramaturgy)
+- [What is Dramaturgy?](#what-is-dramaturgy-)
+  * [Features](#features)
+- [How to use it](#how-to-use-it)
 
 
 # What is Dramaturgy?
