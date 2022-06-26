@@ -2,7 +2,9 @@
 
 **Table of Contents**
 
+
 [TOC]
+
 
 # What is Dramaturgy?
 Dramaturgy is a simple console application made in Kotlin that automatized your downloads, redirecting the files by extension or custom prefix depending of your personal configuration in a JSON file.
@@ -35,7 +37,7 @@ java -jar Dramaturgy-1.0-SNAPSHOT.jar
 ```
 All the files saved in your "downloadUrl" will be moved based on the paths setted in the settingsDram.json.
 
-###Example settingsDram.json:
+### Example settingsDram.json:
 ```JSON
 "downloadUrl" : "C:\\Users\\User\\Downloads",
 	"extensionsPath":[
