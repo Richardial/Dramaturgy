@@ -1,5 +1,5 @@
 {
-	"downloadUrl" : "C:\\Users\\wolve\\Downloads",
+	"downloadUrl" : "C:\\Users\\user\\Downloads",
 	"extensionsPath":[
 		{
 			"extension" : [
@@ -7,7 +7,7 @@
 				"wav",
 				"mp4"
 			],
-			"url": "C:\\Users\\wolve\\Music\\"
+			"url": "C:\\Users\\user\\Music\\"
 		},
 		{
 			"extension" : [
@@ -16,22 +16,22 @@
 				"jpeg",
 				"svg"
 			],
-			"url": "C:\\Users\\wolve\\Downloads\\Memes\\"
+			"url": "C:\\Users\\user\\Downloads\\Memes\\"
 		},{
 			"extension" : [
 				"torrent"
 			],
-			"url" : "C:\\Users\\wolve\\Downloads\\Cursos\\Torrents\\"
+			"url" : "C:\\Users\\user\\Downloads\\Cursos\\Torrents\\"
 		}
 	],
 	"prefix" : [
 		{
 			"prefix" : "-v",
-			"url": "C:\\Users\\wolve\\Desktop\\Vidios\\"
+			"url": "C:\\Users\\user\\Desktop\\Vidios\\"
 		},
 		{
 			"prefix": "-a",
-			"url": "C:\\Users\\wolve\\Documents\\"
+			"url": "C:\\Users\\user\\Documents\\"
 		}
 	],
 	"blackList" : [
