@@ -30,8 +30,7 @@ class FileClassification {
                 if(file.extension in ext.extension){
                     val extraFolder = getFolderInName(file.name,1)
                     if(extraFolder != null){
-                        val pathExtraFolder = Path(ext.url+extraFolder)
-                        Files.createDirectories(pathExtraFolder)
+                        Files.createDirectories(Path(ext.url+extraFolder))
                         file.renameTo(File(ext.url+extraFolder+"\\"+cleanName(file.name, black)))
                     }else{
                         file.renameTo(File(ext.url+cleanName(file.name, black)))
