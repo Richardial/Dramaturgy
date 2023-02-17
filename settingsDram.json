@@ -1,5 +1,5 @@
 {
-	"downloadUrl" : "C:\\Users\\user\\Downloads",
+	"downloadUrl" : "/home/richard/Descargas",
 	"extensionsPath":[
 		{
 			"extension" : [
@@ -7,7 +7,7 @@
 				"wav",
 				"mp4"
 			],
-			"url": "C:\\Users\\user\\Music\\"
+			"url": "/home/richard/Imágenes/"
 		},
 		{
 			"extension" : [
@@ -16,7 +16,7 @@
 				"jpeg",
 				"svg"
 			],
-			"url": "C:\\Users\\user\\Downloads\\Memes\\"
+			"url": "/home/richard/Imágenes/"
 		},{
 			"extension" : [
 				"torrent"
@@ -27,11 +27,11 @@
 	"prefix" : [
 		{
 			"prefix" : "-v",
-			"url": "C:\\Users\\user\\Desktop\\Vidios\\"
+			"url": "/home/richard/Vídeos/"
 		},
 		{
 			"prefix": "-a",
-			"url": "C:\\Users\\user\\Documents\\"
+			"url": "/home/richard/Documentos/"
 		}
 	],
 	"blackList" : [

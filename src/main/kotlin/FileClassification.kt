@@ -7,7 +7,7 @@ class FileClassification {
     companion object{
         fun redirect(
             file: File, extensions: ArrayList<ExtensionPath>, prefix: ArrayList<Prefix>,
-            black: ArrayList<String>,
+            black: ArrayList<String>,delimiter: String
         ){
             val patternPref = "^-[A-Z|a-z]".toRegex()
             val hasPrefix = patternPref.find(file.name)?.value
@@ -20,18 +20,19 @@ class FileClassification {
                     }
                 }
             }else{
-                redirectByExtension(file, extensions, black)
+                redirectByExtension(file, extensions, black, delimiter)
             }
 
         }
 
-        private fun redirectByExtension(file: File, extensions: ArrayList<ExtensionPath>, black: ArrayList<String>){
+        private fun redirectByExtension(file: File, extensions: ArrayList<ExtensionPath>,
+                                        black: ArrayList<String>,delimiter: String){
             for(ext in extensions){
                 if(file.extension in ext.extension){
                     val extraFolder = getFolderInName(file.name,1)
                     if(extraFolder != null){
                         Files.createDirectories(Path(ext.url+extraFolder))
-                        file.renameTo(File(ext.url+extraFolder+"\\"+cleanName(file.name, black)))
+                        file.renameTo(File(ext.url+extraFolder+delimiter+cleanName(file.name, black)))
                     }else{
                         file.renameTo(File(ext.url+cleanName(file.name, black)))
                     }

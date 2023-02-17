@@ -6,10 +6,19 @@ import java.nio.file.StandardWatchEventKinds
 
 
 fun main() {
-    watchDownloads()
+    var delimiter = ""
+    var os = System.getProperty("os.name")
+    if(os.contains("win")){
+        delimiter = "\\"
+    }else{
+        delimiter = "/"
+    }
+
+    watchDownloads(delimiter)
+
 }
 
-fun watchDownloads(){
+fun watchDownloads(delimiter : String){
 
     val json = File("settingsDram.json").readText(Charsets.UTF_8)
     val settings = Json.decodeFromString<Setting>(json)
@@ -25,11 +34,11 @@ fun watchDownloads(){
         val watchKey = watchServiceDownloads.take()
 
         for (event in watchKey.pollEvents()) {
-            val file = File(url+"\\${event.context()}")
+            val file = File(url+"$delimiter${event.context()}")
             Thread.sleep(1000)
             if(file.extension != "tmp")
                 println(file.path)
-            FileClassification.redirect(file, settings.extensionsPath, settings.prefix, settings.blackList)
+            FileClassification.redirect(file, settings.extensionsPath, settings.prefix, settings.blackList, delimiter)
         }
 
         if (!watchKey.reset()) {
