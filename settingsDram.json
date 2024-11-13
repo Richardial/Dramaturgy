@@ -4,8 +4,8 @@
 		{
 			"extension" : [
 				"mp3",
-				"wav",
-				"mp4"
+				"wav"
+
 			],
 			"url": "C:\\Users\\wolve\\Music\\"
 		},
@@ -14,7 +14,7 @@
 				"jpg",
 				"png",
 				"jpeg",
-				"svg"
+				"gif"
 			],
 			"url": "C:\\Users\\wolve\\Downloads\\Memes\\"
 		},{
@@ -22,6 +22,23 @@
 				"torrent"
 			],
 			"url" : "C:\\Users\\wolve\\Downloads\\Cursos\\Torrents\\"
+		},{
+			"extension" : [
+				"mp4",
+				"mov"
+			],
+			"url": "C:\\Users\\wolve\\Downloads\\MemesVid\\"
+		},{
+			"extension" : [
+				"odt",
+				"docx"
+			],
+			"url": "C:\\Users\\wolve\\Documents\\Materias\\"
+		},{
+			"extension" : [
+				"pdf"
+			],
+			"url": "C:\\Users\\wolve\\Downloads\\Pdf\\"
 		}
 	],
 	"prefix" : [
@@ -30,12 +47,31 @@
 			"url": "C:\\Users\\wolve\\Desktop\\Vidios\\"
 		},
 		{
-			"prefix": "-a",
-			"url": "C:\\Users\\wolve\\Documents\\"
+			"prefix" : "-a",
+			"url": "C:\\Users\\wolve\\Desktop\\Audio\\"
+		},{
+			"prefix" : "-i",
+			"url": "C:\\Users\\wolve\\Downloads\\"
+		},{
+			"prefix" : "-p",
+			"url": "C:\\Users\\wolve\\Downloads\\Peliculas\\"
+		},{
+			"prefix" : "-c",
+			"url": "C:\\Users\\wolve\\Documents\\Comics\\"
+		},{
+			"prefix" : "-s",
+			"url": "C:\\Users\\wolve\\Documents\\Screenshots\\"
 		}
 	],
 	"blackList" : [
 		"y2mate.com - ",
-		" OFFICIAL VIDEO"
+		" OFFICIAL VIDEO",
+		" - ",
+		"Official Audio",
+		"AUDIO",
+		"Lyrics",
+		"sub español",
+		"lyrics",
+		"onlymp3.to"
 	]
 }
