@@ -6,20 +6,13 @@ import java.nio.file.StandardWatchEventKinds
 
 
 fun main() {
-    var delimiter = ""
-    var os = System.getProperty("os.name")
-    if(os.contains("win")){
-        delimiter = "\\"
-    }else{
-        delimiter = "/"
-    }
-
+    val delimiter = if (System.getProperty("os.name").contains("win", ignoreCase = true)) "\\" else "/"
     watchDownloads(delimiter)
 
 }
 
 
-fun watchDownloads(delimiter : String){
+fun watchDownloads(delimiter: String) {
     val json = File("settingsDram.json").readText(Charsets.UTF_8)
     val settings = Json.decodeFromString<Setting>(json)
 
@@ -30,22 +23,11 @@ fun watchDownloads(delimiter : String){
     val pathToWatch = downloadFolder.toPath()
     val pathKey = pathToWatch.register(watchServiceDownloads, StandardWatchEventKinds.ENTRY_CREATE)
 
-    var os: Boolean? = null
-
-    if (System.getProperty("os.name").startsWith("Windows")) {
-        os = true
-    } else {
-        os = false
-    }
-
-
-
 
     while (true) {
         val watchKey = watchServiceDownloads.take()
-        var file: File? = null
         for (event in watchKey.pollEvents()) {
-            val file = File(url+"$delimiter${event.context()}")
+            val file = File(url + "$delimiter${event.context()}")
             Thread.sleep(1000)
             if (file.extension != "tmp")
                 println(file.path)
