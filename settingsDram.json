@@ -1,0 +1,42 @@
+{
+	"downloadUrl" : "C:\\Users\\user\\Downloads",
+	"extensionsPath":[
+		{
+			"extension" : [
+				"mp3",
+				"wav",
+				"mp4"
+			],
+			"url": "C:\\Users\\user\\Music\\"
+		},
+		{
+			"extension" : [
+				"jpg",
+				"png",
+				"jpeg",
+				"svg"
+			],
+			"url": "C:\\Users\\user\\Downloads\\Memes\\"
+		},{
+			"extension" : [
+				"torrent"
+			],
+			"url" : "C:\\Users\\user\\Downloads\\Cursos\\Torrents\\"
+		}
+	],
+	"prefix" : [
+		{
+			"prefix" : "-v",
+			"url": "C:\\Users\\user\\Desktop\\Vidios\\"
+		},
+		{
+			"prefix": "-a",
+			"url": "C:\\Users\\user\\Desktop\\Audio\\"
+		}
+	],
+	"blackList" : [
+		"y2mate.com - ",
+		" OFFICIAL VIDEO",
+		" - "
+	]
+}
